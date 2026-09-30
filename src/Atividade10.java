@@ -3,18 +3,17 @@ import java.util.Scanner;
 
 public class Atividade10 {
     public static void main(String[] args) {
-        Scanner entrada = new Scanner(System.in);
-        entrada.useLocale(Locale.US); // notas com ponto (8.5)
+        Scanner sc = new Scanner(System.in);
         final int N = 10;
         String[] nomes = new String[N];
         double[] notas = new double[N];
 
         for (int i = 0; i < N; i++) {
             System.out.print("Nome do aluno " + (i + 1) + ": ");
-            nomes[i] = entrada.nextLine();
+            nomes[i] = sc.nextLine();
             System.out.print("Nota de " + nomes[i] + ": ");
-            notas[i] = entrada.nextDouble();
-            entrada.nextLine(); // limpa o Enter que sobrou no buffer
+            notas[i] = sc.nextDouble();
+            sc.nextLine(); // limpa o Enter que sobrou no buffer
         }
 
         double soma = 0;
@@ -48,7 +47,7 @@ public class Atividade10 {
 
         // Desafio extra: busca por nome
         System.out.print("\nDigite um nome para buscar: ");
-        String busca = entrada.nextLine();
+        String busca = sc.nextLine();
         boolean achou = false;
 
         for (int i = 0; i < N; i++) {

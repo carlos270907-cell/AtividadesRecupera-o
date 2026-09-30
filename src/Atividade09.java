@@ -2,13 +2,13 @@ import java.util.Scanner;
 
 public class Atividade09 {
     public static void main(String[] args) {
-        Scanner entrada = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         int[] sorteados = {5, 12, 23, 31, 44, 58};
         int[] aposta = new int[6];
 
         for (int i = 0; i < aposta.length; i++) {
             System.out.print("Aposta " + (i + 1) + ": ");
-            aposta[i] = entrada.nextInt();
+            aposta[i] = sc.nextInt();
         }
 
         System.out.print("\nNumeros apostados:");

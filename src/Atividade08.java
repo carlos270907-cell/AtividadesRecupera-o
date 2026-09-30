@@ -2,16 +2,16 @@ import java.util.Scanner;
 
 public class Atividade08 {
     public static void main(String[] args) {
-        Scanner entrada = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         String[] nomes = new String[5];
         int[] pontos = new int[5];
 
         for (int i = 0; i < nomes.length; i++) {
             System.out.print("Nome do jogador " + (i + 1) + ": ");
-            nomes[i] = entrada.nextLine();
+            nomes[i] = sc.nextLine();
             System.out.print("Pontuacao de " + nomes[i] + ": ");
-            pontos[i] = entrada.nextInt();
-            entrada.nextLine(); // limpa o Enter que sobrou no buffer
+            pontos[i] = sc.nextInt();
+            sc.nextLine(); // limpa o Enter que sobrou no buffer
         }
 
         int posMaior = 0;

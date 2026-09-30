@@ -2,16 +2,16 @@ import java.util.Scanner;
 
 public class Atividade06 {
     public static void main(String[] args) {
-        Scanner entrada = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         int[] numeros = new int[10];
 
         for (int i = 0; i < numeros.length; i++) {
             System.out.print("Numero " + (i + 1) + ": ");
-            numeros[i] = entrada.nextInt();
+            numeros[i] = sc.nextInt();
         }
 
         System.out.print("Qual numero deseja procurar? ");
-        int procurado = entrada.nextInt();
+        int procurado = sc.nextInt();
         boolean achou = false;
 
         // Desafio extra: mostra todas as posicoes (posicao = indice + 1)

@@ -2,13 +2,13 @@ import java.util.Scanner;
 
 public class Atividade07 {
     public static void main(String[] args) {
-        Scanner entrada = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         final int LIMITE = 80;
         int[] vel = new int[10];
 
         for (int i = 0; i < vel.length; i++) {
             System.out.print("Velocidade do veiculo " + (i + 1) + " (km/h): ");
-            vel[i] = entrada.nextInt();
+            vel[i] = sc.nextInt();
         }
 
         int acima = 0;

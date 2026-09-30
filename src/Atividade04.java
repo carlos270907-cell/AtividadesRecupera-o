@@ -3,14 +3,13 @@ import java.util.Scanner;
 
 public class Atividade04 {
     public static void main(String[] args) {
-        Scanner entrada = new Scanner(System.in);
-        entrada.useLocale(Locale.US);
+        Scanner sc = new Scanner(System.in);
         double[] precos = new double[6];
         double total = 0;
 
         for (int i = 0; i < precos.length; i++) {
             System.out.print("Preco do produto " + (i + 1) + ": R$ ");
-            precos[i] = entrada.nextDouble();
+            precos[i] = sc.nextDouble();
             total += precos[i];
         }
 
@@ -22,7 +21,7 @@ public class Atividade04 {
 
         // Desafio extra
         System.out.print("\nQuanto dinheiro o cliente possui? R$ ");
-        double dinheiro = entrada.nextDouble();
+        double dinheiro = sc.nextDouble();
 
         if (dinheiro >= total) {
             System.out.printf(Locale.US, "Dinheiro suficiente! Troco: R$ %.2f%n", dinheiro - total);
